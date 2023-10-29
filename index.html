@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<head>
+    <meta charset="utf-8">
+      <link>Click <a href="fix.com">here</a> to fix keyboard controls if they are not working</link>
+ <!-- This is now in the head element -->
+      <style>
+        body,
+        html,
+        iframe {
+          margin: 0;
+          padding: 0;
+          height: 100%;
+          width: 100%;
+          overflow: hidden;
+        }
+        .forceIosScrolling {
+          overflow: scroll;
+        }
+      </style>
+  
+
+  </head>
+  <body>
+
+    <!-- Embed an iframe with sandbox attributes -->
+    <iframe
+      id="innerFrame"
+      name="innerFrame"
+      sandbox="allow-scripts allow-popups allow-forms allow-same-origin allow-popups-to-escape-sandbox allow-downloads"
+      frameborder="0"
+      allowfullscreen="true"
+      src="https://vex4.amazegmes.repl.co/"
+    >
+    </iframe>
+    <!-- Include a custom script -->
+    <script src="index.js"></script>
+    <!-- Load Google APIs -->
+    <script src="https://apis.google.com/_/scs/abc-static/_/js/k=gapi.lb.en.AOzoyjtjrhQ.O/m=gapi_rpc/rt=j/sv=1/d=1/ed=1/rs=AHpOoo9-fA1P7IZFa1fdRj158NoDqrnbYA/cb=gapi.loaded_0?le=scs" async=""></script>
+    <script src="https://apis.google.com/js/api.js?checkCookie=1"></script>
+  </body>
+  </html>
